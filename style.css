@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: monospace;
+}
+
+.root {
+    height: 100vh;
+    background-color: rgb(4, 7, 40);
+    color: greenyellow;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#area {
+    width: 170px;
+    height: 170px;
+    margin: 10px;
+}
+
+.cells {
+    width: 50px;
+    height: 50px;
+    font: 42px;
+    border: 2px solid;
+    display: inline-block;
+    line-height: 50px;
+    vertical-align: middle;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    cursor: pointer;
+    color: greenyellow;
+    transition: all .3s ease-in-out;
+}
+.cells:hover {
+    transition: all .3s ease-in-out;
+    background-color: greenyellow;
+}
+.cells:active {
+    transform: scale(.80);
+}
+
+.currentPlayer {
+    width: 140px;
+    font-size: 18px;
+    color: greenyellow;
+    font-weight: bold;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.stat {
+    margin-top: 10px;
+    align-items: center;
+    font-size: 18px;
+}
+
+.stat table {
+    border-collapse: collapse;
+    box-shadow: 0 0 15px 10px;
+}
+
+.stat table,
+.stat th,
+.stat td {
+    border: 3px solid;
+    padding: 5px;
+    text-align: center;
+}
+
+.gameResult {
+    width: 140px;
+    font-size: 18px;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.gameHistory {
+    width: 120px;
+    font-size: 18px;
+    align-items: center;
+}
+
+.error {
+    font-size: 24px;
+    margin-top: 30px;
+    color: red;
+}
+
+@media (max-width: 768px) {
+    .root {
+        flex-direction: column;
+        justify-content: start;
+    }
+    .header-root {
+        margin-top: 10px;
+        display: flex;
+    }
+    #area {
+        width: 270px;
+        height: 270px;
+        margin-top: 30px;
+    }
+    .cells {
+        width: 80px;
+        height: 80px;
+        font-size: 40px;
+        padding-top: 13px;
+        padding-left: 6px;
+    }
+    .currentPlayer {
+        font-size: 24px;
+    }
+    .stat {
+        font-size: 36px;
+        margin-top: 150px;
+    }
+    .gameResult {
+        font-size: 24px;
+    }
+    .gameHistory {
+        font-size: 24px;
+    }
+    .error {
+        font-size: 34px;
+    }
+}

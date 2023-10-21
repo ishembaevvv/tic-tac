@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./free-icon-tic-tac-toe-566294.png" type="image/x-icon">
+    <title>Tic-Tac-Toy</title>
+</head>
+<body>
+    <div class="root">
+        <div class="header-root">
+            <div class="currentPlayer">
+                <span>Азыркы журуш: <span id="currentPl">X</span></span>
+            </div>
+            <div class="gameResult">
+                <span>Оюндун жыйынтыгы:</span>
+                <br>
+                <span id="whoWins"></span>
+            </div>
+            <div class="gameHistory">
+                Оюндун тарыхы:
+                <br>
+                <div id="roundHistory"></div>
+            </div>
+    </div>
+        <div id="area"></div>
+        <div class="stat">
+            <table>
+                <th colspan="2">Маалымдама:</th>
+                <tr>
+                    <td>Утту X:</td>
+                    <td id="sX">
+                        <span>0</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Утту O:</td>
+                    <td id="sO">
+                        <span>0</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Тег чыгуу:</td>
+                    <td id="sD">
+                        <span>0</span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="error" id="error"></div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
